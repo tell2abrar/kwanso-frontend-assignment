@@ -3,10 +3,10 @@ import router from 'navigation/router';
 import AppContext from 'AppContext';
 import primaryTheme from 'theme/primaryTheme';
 import { Task } from 'types/task';
-import { useEffect, useState } from 'react';
 import { RouterSwitch } from 'react-typesafe-routes';
-import { BrowserRouter, Redirect, Route } from 'react-router-dom';
 import { ChakraProvider } from '@chakra-ui/react';
+import { useEffect, useState } from 'react';
+import { BrowserRouter, Redirect, Route } from 'react-router-dom';
 
 const App = () => {
   const [tasks, setTasks] = useState<Task[]>([]);
