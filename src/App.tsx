@@ -9,12 +9,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { ChakraProvider } from '@chakra-ui/react';
 
 const App = () => {
-  const [tasks, setTasks] = useState<Task[]>([
-    {
-      id: 1,
-      name: 'My Task',
-    },
-  ]);
+  const [tasks, setTasks] = useState<Task[]>([]);
 
   return (
     <div>
