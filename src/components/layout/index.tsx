@@ -14,7 +14,12 @@ const Container = chakra(Box, {
 
 const Layout = ({ children }: PrimaryLayoutProps) => {
   return (
-    <Flex flexDirection='column' width='100%' minHeight='100vh'>
+    <Flex
+      flexDirection='column'
+      width='100%'
+      minHeight='100vh'
+      backgroundColor={'blanchedalmond'}
+    >
       <Header />
       <Container>{children}</Container>
       <Footer />
